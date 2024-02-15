@@ -22,56 +22,44 @@
                 <!-- Switch entre los dos formularios -->
                 <a href="#" class="button-registro button-activo" onclick="showInternalRegistration()">Internos</a>
                 <a href="#" class="button-registro" onclick="showExternalRegistration()">Externos</a>
-            </div>            
+            </div>
             <div class="content2_1" id="internalRegistration" style="display: none;">
                 <!-- Formulario de registro para internos -->
                 <form>
-                    <label for="expediente">Expediente:</label>
-                    <input type="number" id="expediente" name="expediente" required>
-            
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombreInternos" name="nombre" required>
-            
-                    <label for="apellidoPaterno">Apellido Paterno:</label>
-                    <input type="text" id="apellidoPaternoInternos" name="apellidoPaterno" required>
-            
-                    <label for="apellidoMaterno">Apellido Materno:</label>
-                    <input type="text" id="apellidoMaternoInternos" name="apellidoMaterno" required>
-            
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefonoInternos" name="telefono" pattern="[0-9]{10}" required>
-            
-                    <label for="correo">Correo electrónico:</label>
-                    <input type="email" id="correoInternos" name="correo" required>
-            
+                    <input type="number" id="expediente" name="expediente" placeholder="Expediente" required>
+                    <input type="text" id="nombreInternos" name="nombre" placeholder="Nombre" required>
+                    <input type="text" id="apellidoPaternoInternos" name="apellidoPaterno"
+                        placeholder="Apellido Paterno" required>
+                    <input type="text" id="apellidoMaternoInternos" name="apellidoMaterno"
+                        placeholder="Apellido Materno" required>
+                    <input type="text" id="telefonoInternos" name="telefono" maxlength="10"
+                        oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10)" placeholder="Teléfono"
+                        required>
+                    <input type="email" id="correoInternos" name="correo" placeholder="Correo electrónico" required>
                     <button type="submit" class="button-submit">Guardar</button>
+                    <button type="button" class="button-regresar" onclick="showInitialContent()">Regresar</button>
                 </form>
             </div>
             <div class="content2_2" id="externalRegistration" style="display: none;">
                 <!-- Formulario de registro para externos -->
                 <form>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombreExternos" name="nombre" required>
-            
-                    <label for="apellidoPaterno">Apellido Paterno:</label>
-                    <input type="text" id="apellidoPaternoExternos" name="apellidoPaterno" required>
-            
-                    <label for="apellidoMaterno">Apellido Materno:</label>
-                    <input type="text" id="apellidoMaternoExternos" name="apellidoMaterno" required>
-            
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefonoExternos" pattern="[0-9]{10}" required>
-            
-                    <label for="correo">Correo electrónico:</label>
-                    <input type="email" id="correoExternos" name="correo" required>
-            
+                    <input type="text" id="nombreExternos" name="nombre" placeholder="Nombre" required>
+                    <input type="text" id="apellidoPaternoExternos" name="apellidoPaterno"
+                        placeholder="Apellido Paterno" required>
+                    <input type="text" id="apellidoMaternoExternos" name="apellidoMaterno"
+                        placeholder="Apellido Materno" required>
+                    <input type="text" id="telefonoExternos" name="telefono" maxlength="10"
+                        oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10)" placeholder="Teléfono"
+                        required>
+                    <input type="email" id="correoExternos" name="correo" placeholder="Correo electrónico" required>
                     <button type="submit" class="button-submit">Guardar</button>
+                    <button type="button" class="button-regresar" onclick="showInitialContent()">Regresar</button>
                 </form>
             </div>
         </div>
     </div>
-    
-    
+
+
     <script src="registration_options.js"></script>
 </body>
 
