@@ -15,7 +15,7 @@
             <!-- Contenido inicial -->
             <h1>Bienvenido</h1>
             <a href="#" class="button" onclick="showRegistrationOptions()">Registrarse</a>
-            <a href="#" class="button">Obtener Boletos</a>
+            <a href="#" class="button" onclick="showGetTicket()">Obtener Boletos</a>
         </div>
         <div class="content2" id="registrationOptions" style="display: none;">
             <div class="content2-switch">
@@ -52,13 +52,24 @@
                         oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10)" placeholder="Teléfono"
                         required>
                     <input type="email" id="correoExternos" name="correo" placeholder="Correo electrónico" required>
+                    <input type="text" id="institucionExternos" name="institucon" placeholder="Institución" required>
+                    <input type="text" id="nivelEducativoExternos" name="nivelEducativo" placeholder="Nivel educativo" required>
                     <button type="submit" class="button-submit" formaction="talleres.html">Guardar</button>
                     <button type="button" class="button-regresar" onclick="showInitialContent()">Regresar</button>
                 </form>
             </div>
         </div>
+        <div class="content3" id="getTicket" style="display: none;">
+                <form>
+                    <input type="text" id="telefonoExternos" name="telefono" maxlength="10"
+                        oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10)" placeholder="Teléfono"
+                        required>
+                    <button type="submit" class="button-submit" >Obtener</button>
+                    <button type="button" class="button-regresar" onclick="showInitialContent()">Regresar</button>
+                </form>
+            </div>
+        </div>
     </div>
-
 
     <script src="registration_options.js"></script>
 </body>

@@ -33,18 +33,28 @@ function showExternalRegistration() {
     document.querySelector('.button-registro:nth-child(2)').classList.add('button-activo');
 }
 
+function showGetTicket() {
+    var initialContent = document.getElementById("initialContent");
+    var getTicket = document.getElementById("getTicket");
+    
+    initialContent.style.display = "none"; // Oculta content1
+    getTicket.style.display = "block"; // Muestra content3
+}
+
 function showInitialContent() {
     var initialContent = document.getElementById("initialContent");
     var registrationOptions = document.getElementById("registrationOptions");
     var container = document.getElementById("mainContainer");
     var internalRegistration = document.getElementById("internalRegistration");
     var externalRegistration = document.getElementById("externalRegistration");
+    var getTicket = document.getElementById("getTicket");
 
     initialContent.style.display = "flex"; // Muestra el contenido inicial
     registrationOptions.style.display = "none"; // Oculta el formulario de registro
     container.classList.remove("container-new"); // Remueve la clase container-new
     internalRegistration.style.display = "none";
     externalRegistration.style.display = "none";
+    getTicket.style.display = "none";
 }
 
 
