@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #fbf7ff;
+    background-color: #fff9ff;
 }
 
 .responsive-img {
@@ -23,16 +23,19 @@ body {
     display: flex;
     margin: 15%;
     align-items: center;
-    justify-content: center; /* Añade esta línea para centrar horizontalmente */
-    background-color: lavender;
+    justify-content: center;
+    /* Añade esta línea para centrar horizontalmente */
+    background-color: #f5ebf3;
     border-radius: 15px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    box-shadow: -13px 13px 20px 5px rgba(0, 0, 0, 0.151);
     overflow: hidden;
 }
 
 .container-new {
-    align-items: flex-start; /* Cambia esto a flex-start */
-    justify-content: flex-start; /* Añade esto para evitar que el contenido se centre verticalmente */
+    align-items: flex-start;
+    /* Cambia esto a flex-start */
+    justify-content: flex-start;
+    /* Añade esto para evitar que el contenido se centre verticalmente */
 }
 
 .content1 {
@@ -40,7 +43,8 @@ body {
     flex-direction: column;
     flex: 1;
     padding: 3rem;
-    align-items: center; /* Centrar verticalmente el contenido inicial */
+    align-items: center;
+    /* Centrar verticalmente el contenido inicial */
 }
 
 .content2 {
@@ -48,7 +52,8 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Para distribuir el espacio verticalmente */
+    justify-content: space-between;
+    /* Para distribuir el espacio verticalmente */
 }
 
 .content3 {
@@ -56,29 +61,31 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Para distribuir el espacio verticalmente */
+    justify-content: space-between;
+    /* Para distribuir el espacio verticalmente */
+    padding: 0 4rem;
 }
 
 .content2_1,
 .content2_2 {
     flex: 1;
     display: flex;
-    justify-content: center; /* Para centrar los elementos horizontalmente */
-    align-items: center; /* Para centrar los elementos verticalmente */
-    padding: 0 2rem; /* Ajusta el relleno horizontal */
+    padding: 0 4rem;
+    /* Ajusta el relleno horizontal */
 }
 
 .content2-switch {
     display: flex;
     flex-direction: row;
-    flex: 1; /* Añade un pequeño margen superior */
-} 
+    flex: 1;
+    /* Añade un pequeño margen superior */
+}
 
 .button-registro {
     display: block;
     width: 100%;
     padding: 5% 0;
-    background-color: #665cc2;
+    background-color: #6a368d;
     color: #fff;
     text-align: center;
     text-decoration: none;
@@ -90,46 +97,49 @@ body {
 }
 
 .button-activo {
-    background-color: #474086; /* Cambia el color del botón activo */
+    background-color: #43225a;
+    /* Cambia el color del botón activo */
 }
 
 .button-submit {
+    width: 50%;
     color: #fff;
     padding: 10px;
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
     border: 0;
     border-radius: 30px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #665cc2;
+    background-color: #B05096;
     transition: background-color 0.3s;
 }
 
 .button-submit:hover {
-    background-color: #474086;
+    background-color: #9b4885;
 }
 
 .button-regresar {
+    width: 50%;
     color: #fff;
     padding: 10px;
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
     border: 0;
     border-radius: 30px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #665cc2;
+    background-color: #B05096;
     transition: background-color 0.3s;
 }
 
 .button-regresar:hover {
-    background-color: #474086;
+    background-color: #9b4885;
 }
 
 
-form{
+form {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding-top: 2rem;
 }
 
 input[type="number"],
@@ -137,7 +147,7 @@ input[type="text"],
 input[type="email"] {
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #d5d5d5;
+    border: 1px solid #e4dee9;
     border-radius: 5px;
     font-size: 16px;
 }
@@ -149,8 +159,10 @@ input::placeholder {
     top: 10px;
     color: #999;
     transition: all 0.3s;
-    pointer-events: none; /* Evita que la etiqueta interfiera con el clic en el campo */
-    z-index: 1; /* Asegura que las etiquetas estén encima de los campos de entrada */
+    pointer-events: none;
+    /* Evita que la etiqueta interfiera con el clic en el campo */
+    z-index: 1;
+    /* Asegura que las etiquetas estén encima de los campos de entrada */
 }
 
 /* Ajusta el color del texto al escribir */
@@ -159,6 +171,14 @@ input:focus::placeholder {
     font-size: 12px;
     color: #333;
 }
+
+/* Estilo para el borde cuando el campo de entrada está enfocado */
+input:focus {
+    outline: none; /* Elimina el contorno predeterminado */
+    border: 1px solid #e4dee9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.151);
+}
+
 
 h1 {
     text-align: center;
@@ -174,7 +194,7 @@ h1 {
     margin: auto;
     padding: 5% 0;
     margin-bottom: 2rem;
-    background-color: #7e57c2;
+    background-color: #6a368d;
     color: #fff;
     text-align: center;
     text-decoration: none;
@@ -191,7 +211,7 @@ h1 {
 }
 
 .button:hover {
-    background-color: #5e35b1;
+    background-color: #43225a;
 }
 
 /* Media query para dispositivos móviles */
@@ -199,8 +219,9 @@ h1 {
     .container {
         flex-direction: column;
         align-items: center;
+        margin: 10%;
     }
-    
+
     .responsive-img {
         width: 100%;
         border-top-left-radius: 15px;
@@ -219,7 +240,16 @@ h1 {
     }
 
     .button {
+        width: 70%;
         margin-bottom: 1rem;
+    }
+
+    .button-submit {
+        width: 60%;
+    }
+
+    .button-regresar {
+        width: 60%;
     }
 
     .content1 {
@@ -227,7 +257,14 @@ h1 {
         padding: 3rem 0;
     }
 
-    form{
+    .content2_1,
+    .content2_2 {
+        padding: 0 2rem;
+        /* Ajusta el relleno horizontal */
+    }
+
+
+    form {
         padding: 2rem 0;
     }
 }
