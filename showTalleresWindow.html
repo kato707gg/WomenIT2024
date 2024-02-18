@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talleres</title>
+    <link rel="stylesheet" href="styletalleres.css">
+</head>
+
+<body>
+    <div id="title-container">
+        <div id="container-logo">
+                <img src="womenit_logo.png" class="logo" alt="logo" id="logo">
+                <button type="button" class="button-cerrar" onclick="window.location.href = 'login.html'">Cerrar</button>
+        </div>
+    </div>
+    <div>
+        <H1 id="talleres">Talleres</H1>
+        <H2 id="instruccion">Selecciona el taller al que deseas inscribirte</H2>
+    </div>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Horario</th>
+            <th>Instructor</th>
+            <th>Inscribir</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>9:00 - 10:00</td>
+            <td>Ejemplo1</td>
+            <td>
+                <form action="" method="POST">
+                    <input type="hidden" name="id" value="1">
+                    <button class="button-inscribirse" type="submit">Inscribirse</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>10:00 - 11:00</td>
+            <td>Ejemplo2</td>
+            <td>
+                <form action="" method="POST">
+                    <input type="hidden" name="id" value="2">
+                    <button class="button-inscribirse" type="submit">Inscribirse</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>11:00 - 12:00</td>
+            <td>Ejemplo3</td>
+            <td>
+                <form action="" method="POST">
+                    <input type="hidden" name="id" value="2">
+                    <button class="button-inscribirse" type="submit">Inscribirse</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

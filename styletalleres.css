@@ -1,0 +1,156 @@
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 91%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th,
+td {
+    width: 25%;
+    border-bottom: 0.0625rem solid #a757d63b;
+    padding: 20px;
+}
+
+td {
+    display: table-cell;
+    text-align: center;
+    font-family: system-ui;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #3c4043;
+}
+
+th {
+    letter-spacing: .01785714em;
+    font-family: system-ui;
+    font-weight: 400;
+    font-size: 2.2rem;
+    color: #3c4043;
+    background: rgb(212, 189, 255);
+    padding-bottom: 3.5rem;
+    padding-top: 3.5rem;
+}
+
+form {
+    margin: 0.5rem;
+}
+
+button {
+    background-color: rgb(212, 189, 255);
+    border-radius: 5px;
+    border: 0.1rem;
+    font-family: system-ui;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #695979;
+    padding: 0.5rem 01rem;
+}
+
+body {
+    display: block;
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+    margin: auto;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #3c4043;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    text-align: center;
+    margin: auto;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #3c4043;
+    margin-bottom: 4rem;
+}
+
+#title-container {
+    background-color: #f5ebf3;
+    margin-bottom: 4rem;
+    padding: 1rem;
+}
+
+#container-logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 15%;
+    margin-left: 1rem;
+}
+
+.button-inscribirse {
+    background-color: rgba(161, 98, 219, 0.938);
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.button-inscribirse:hover {
+    background-color: rgba(127, 79, 172, 0.938);
+}
+
+.button-cerrar {
+    background-color: #43225a;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    margin-left: auto;
+    margin-right: 1rem;
+    padding: 1rem 2rem;
+    color: #ffffff;
+}
+
+.button-cerrar:hover {
+    background-color: #6c3096;
+}
+
+#back {
+    all: unset;
+}
+
+#back:hover {
+    all: unset;
+    cursor: pointer;
+}
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 1030px) {
+    #logo {
+        width: 40%;
+    }
+
+    .button-cerrar {
+        padding: 0.6rem 1rem;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th {
+        letter-spacing: 0;
+        font-weight: 500;
+        font-size: 1.1rem;
+        padding: 2.5rem 0;
+    }
+
+    td {
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
+
+    .button-inscribirse {
+        background-color: rgba(161, 98, 219, 0.938);
+        color: #ffffff;
+        padding: 0.3rem 0.5rem;
+        font-size: 0.8rem;
+    }
+}

@@ -36,7 +36,7 @@
                         oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10)" placeholder="Teléfono"
                         required>
                     <input type="email" id="correoInternos" name="correo" placeholder="Correo electrónico" required>
-                    <button type="submit" class="button-submit" formaction="talleres.php">Guardar</button>
+                    <button type="submit" class="button-submit" formaction="showTalleresWindow.html">Guardar</button>
                     <button type="button" class="button-regresar" onclick="showInitialContent()">Regresar</button>
                 </form>
             </div>
@@ -54,7 +54,7 @@
                     <input type="email" id="correoExternos" name="correo" placeholder="Correo electrónico" required>
                     <input type="text" id="institucionExternos" name="institucon" placeholder="Institución" required>
                     <input type="text" id="nivelEducativoExternos" name="nivelEducativo" placeholder="Nivel educativo" required>
-                    <button type="submit" class="button-submit" formaction="talleres.html">Guardar</button>
+                    <button type="submit" class="button-submit" formaction="showTalleresWindow.html">Guardar</button>
                     <button type="button" class="button-regresar" onclick="showInitialContent()">Regresar</button>
                 </form>
             </div>
@@ -70,8 +70,8 @@
             </div>
         </div>
     </div>
-
     <script src="registration_options.js"></script>
+    <script src="showTalleresWindow.js"></script>
 </body>
 
 </html>
